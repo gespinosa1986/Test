@@ -25,6 +25,19 @@ namespace Examen
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/theme").Include(
+                      "~/Content/bootstrap-theme.min.css"));
+
+            /********************************** Scripts System **********************************/
+
+            bundles.Add(new ScriptBundle("~/Scripts/Account").Include("~/Scripts/SystemScripts/AccountScript.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Home").Include("~/Scripts/SystemScripts/HomeScript.js"));
+
+            /*********************************** Style System ***********************************/
+
+            bundles.Add(new StyleBundle("~/Content/Account").Include("~/Content/SystemStyles/AccountStyle.css"));
+            bundles.Add(new StyleBundle("~/Content/Home").Include("~/Content/SystemStyles/HomeStyle.css"));
         }
     }
 }

@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/theme")
+    @Styles.Render("~/Content/Account")
+</head>
+<body>
+    <div id="Contenedor">
+        <div class="Icon">
+            <span class="glyphicon glyphicon-user"></span>
+        </div>
+        <div class="ContentForm">
+            <form action="" method="post" name="FormEntrar">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input type="email" class="form-control" name="correo" placeholder="Correo" id="Correo" aria-describedby="sizing-addon1" required>
+                </div>
+                <br>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input type="password" id="contra" name="contra" class="form-control" placeholder="******" aria-describedby="sizing-addon1" required>
+                </div>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" id="Ingresar" type="submit">Entrar</button>
+                <div class="opcioncontra"><a href="">Olvidaste tu contraseña?</a></div>
+            </form>
+        </div>
+    </div>
+</body>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/Scripts/Account")
+</html>

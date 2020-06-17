@@ -6,9 +6,10 @@ using System.Web.Mvc;
 
 namespace Examen.Controllers
 {
-    public class HomeController : Controller
+    public class AccountController : Controller
     {
-        public ActionResult Products(Guid user)
+        // GET: Account
+        public ActionResult Login()
         {
             return View();
         }
